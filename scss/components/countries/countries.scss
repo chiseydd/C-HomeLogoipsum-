@@ -1,0 +1,41 @@
+.countries{
+    position: relative;
+    margin-top: 100px;
+    &__title{
+        @extend %subtitle;
+        position: relative;
+        color: #110229;
+        margin-bottom: 56px;
+        max-width: 478px;
+    }
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        &-wrapper{
+            display: flex;
+            justify-content: center;    
+        }
+    }
+    &__name{
+        position: absolute;
+        font-size: 24px;
+        line-height: 31px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        top: 48px;
+    }
+    &__item{
+        margin-left: 30px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.title__wrapper{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}

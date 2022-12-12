@@ -1,0 +1,36 @@
+.estate{
+    margin-bottom: 100px;
+    &__wrapper{
+        background-image: url(../img/estate.png);
+        background-repeat: no-repeat;
+        padding-top: 86px;
+    }
+    &__title{
+        @extend %title;
+        color: #110229;
+        margin-left: 86px;
+        margin-bottom: 33px;
+        max-width: 394px;
+    }
+    &__text{
+        @extend %text;
+        color: #585981;
+        margin-left: 86px;
+        margin-bottom: 36px;
+        max-width: 490px;
+    }
+    &__btn{
+        padding: 7px 42px;
+        font-size: 16px;
+        line-height: 36px;
+        font-weight: 600;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: #fff;
+        margin-left: 86px;
+        background-color: #1daeff;
+        border: none;
+        border-radius: 10px;
+        margin-bottom: 65px;
+    }
+}

@@ -1,0 +1,110 @@
+.top{
+    &__wrapper{
+        background-image: url(../img/top_img.jpg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        padding-bottom: 81px;
+    }
+    &__title{
+        @extend %title;
+        color: #110229;
+        margin-bottom: 39px;
+        padding-top: 92px;
+        margin-left: 89px;
+        max-width: 507px;
+    }
+    &__text{
+        @extend %text;
+        color: #585981;
+        margin-left: 89px;
+        max-width: 474px;
+        margin-bottom: 62px;
+    }
+    &__tabs{
+        margin-left: 89px;
+        position: relative;
+        &-btn{
+            border: none;
+            background-color: inherit;
+            padding: 3px 29px;
+            font-size: 14px;
+            line-height: 36px;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            font-weight: 500;
+            border-radius: 20px 20px 0 0;
+            color: #8f90a6;
+            cursor: pointer;
+            &:hover{
+                color: #110229;
+            }
+            &.active{
+                border: none;
+                background-color: #fff;
+                padding: 3px 29px;
+                font-size: 14px;
+                line-height: 36px;
+                text-transform: uppercase;
+                letter-spacing: 0.2em;
+                font-weight: 500;
+                border-radius: 20px 20px 0 0;
+                color: #000;
+                transition: all 0.2s ease-in-out;
+            }
+        }
+    }    
+}
+
+.tab{
+    display: flex;
+    align-items: center;
+    max-width: 918px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    position: relative;
+    top: -10px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 20px 10px 10px rgba(0, 0, 0, 0.2);
+    &__item{
+        border-right: 2px solid #dcdceb;
+        margin-left: 30px;
+        cursor: pointer;
+        &:nth-child(3){
+            border: none;
+            margin-right: 110px;
+        }
+        &-title{
+            font-size: 18px;
+            line-height: 36px;
+            font-weight: 600;
+            color: #110229;
+        }
+        &-text{
+            position: relative;
+            color: #8f90a6;
+            font-size: 16px;
+            line-height: 36px;
+            font-weight: normal;
+        }
+    }
+    &__search{
+        padding: 18px 18px;
+        background-color: #1daeff;
+        border-radius: 22px;
+        border: none;
+    }
+}
+
+.geo{
+    margin-left: 49px;
+    margin-right: 20px;
+    position: relative;
+    top: 5px;
+}
+
+.arr{
+    margin-left: 49px;
+    margin-right: 20px;
+    position: relative;
+}
